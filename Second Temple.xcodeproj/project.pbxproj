@@ -7,19 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051A0D212C81D04700AC9D65 /* Second_TempleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A0D202C81D04700AC9D65 /* Second_TempleApp.swift */; };
-		051A0D232C81D04700AC9D65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A0D222C81D04700AC9D65 /* ContentView.swift */; };
+		051A0D212C81D04700AC9D65 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051A0D202C81D04700AC9D65 /* App.swift */; };
 		051A0D252C81D04800AC9D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051A0D242C81D04800AC9D65 /* Assets.xcassets */; };
 		051A0D282C81D04800AC9D65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051A0D272C81D04800AC9D65 /* Preview Assets.xcassets */; };
+		056236B52C81FAAD002A17DC /* SecondTempleTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056236B32C81FAA9002A17DC /* SecondTempleTimer.framework */; };
+		056236B62C81FAAD002A17DC /* SecondTempleTimer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056236B32C81FAA9002A17DC /* SecondTempleTimer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		056236B82C820D55002A17DC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056236B72C820D55002A17DC /* ViewModel.swift */; };
+		056236BA2C820E00002A17DC /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056236B92C820E00002A17DC /* View.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		056236B22C81FA98002A17DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				056236B62C81FAAD002A17DC /* SecondTempleTimer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		051A0D1D2C81D04700AC9D65 /* Second Temple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Second Temple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		051A0D202C81D04700AC9D65 /* Second_TempleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_TempleApp.swift; sourceTree = "<group>"; };
-		051A0D222C81D04700AC9D65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		051A0D202C81D04700AC9D65 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		051A0D242C81D04800AC9D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		051A0D272C81D04800AC9D65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		051A0D292C81D04800AC9D65 /* Second_Temple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Second_Temple.entitlements; sourceTree = "<group>"; };
+		056236B32C81FAA9002A17DC /* SecondTempleTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecondTempleTimer.framework; sourceTree = "<group>"; };
+		056236B72C820D55002A17DC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		056236B92C820E00002A17DC /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056236B52C81FAAD002A17DC /* SecondTempleTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 			children = (
 				051A0D1F2C81D04700AC9D65 /* Second Temple */,
 				051A0D1E2C81D04700AC9D65 /* Products */,
+				056236A72C81F0C2002A17DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +73,9 @@
 		051A0D1F2C81D04700AC9D65 /* Second Temple */ = {
 			isa = PBXGroup;
 			children = (
-				051A0D202C81D04700AC9D65 /* Second_TempleApp.swift */,
-				051A0D222C81D04700AC9D65 /* ContentView.swift */,
+				051A0D202C81D04700AC9D65 /* App.swift */,
+				056236B92C820E00002A17DC /* View.swift */,
+				056236B72C820D55002A17DC /* ViewModel.swift */,
 				051A0D242C81D04800AC9D65 /* Assets.xcassets */,
 				051A0D292C81D04800AC9D65 /* Second_Temple.entitlements */,
 				051A0D262C81D04800AC9D65 /* Preview Content */,
@@ -69,6 +91,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		056236A72C81F0C2002A17DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				056236B32C81FAA9002A17DC /* SecondTempleTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,12 +110,15 @@
 				051A0D192C81D04700AC9D65 /* Sources */,
 				051A0D1A2C81D04700AC9D65 /* Frameworks */,
 				051A0D1B2C81D04700AC9D65 /* Resources */,
+				056236B22C81FA98002A17DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Second Temple";
+			packageProductDependencies = (
+			);
 			productName = "Second Temple";
 			productReference = 051A0D1D2C81D04700AC9D65 /* Second Temple.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +147,8 @@
 				Base,
 			);
 			mainGroup = 051A0D142C81D04700AC9D65;
+			packageReferences = (
+			);
 			productRefGroup = 051A0D1E2C81D04700AC9D65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,8 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051A0D232C81D04700AC9D65 /* ContentView.swift in Sources */,
-				051A0D212C81D04700AC9D65 /* Second_TempleApp.swift in Sources */,
+				056236B82C820D55002A17DC /* ViewModel.swift in Sources */,
+				051A0D212C81D04700AC9D65 /* App.swift in Sources */,
+				056236BA2C820E00002A17DC /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +336,10 @@
 				DEVELOPMENT_TEAM = FFZ78R3652;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +368,10 @@
 				DEVELOPMENT_TEAM = FFZ78R3652;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (

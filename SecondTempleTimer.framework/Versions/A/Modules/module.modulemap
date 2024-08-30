@@ -1,0 +1,8 @@
+framework module "SecondTempleTimer" {
+    umbrella header "SecondTempleTimer.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
