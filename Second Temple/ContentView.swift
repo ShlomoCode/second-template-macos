@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Second Temple
-//
-//  Created by shlomo on 30/08/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
